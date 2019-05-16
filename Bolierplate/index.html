@@ -11,6 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -27,7 +30,6 @@ main {
 .row div a {
   display: inline-block;
   width: 100%;
-  background: rgba(0, 0, 0, 0.1);
 }
 </style>
 
@@ -81,173 +83,134 @@ margin-right: auto;
 
   <!-- Divs med x / 12 kolonner i bredde -->
   <div class="row">
-    <div class="grid-xs-4" style="width: 100%; margin-bottom: 0;"> <a>    <div class="navlogo"><img src="DAR.png"></div>
-      <div class="navbox">FORSIDE</div>
-      <div class="navbox">OM REGIMENTET</div>
-      <div class="navbox">VÆRNEPLIGT</div>
-      <div class="navbox">LEDIGE STILLINGER</div>
-      <div class="navbox">KONTAKT OS</div>
-      <div id="menuToggle">
-        <input type="checkbox" />
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <ul id="menu">
-          <a href="#"><li>Igangværende delmål</li></a>
-          <a href="#"><li>Fuldførte delmål</li></a>
+    <div class="grid-xs-4" style="width: 100%; margin-bottom: 0;"> <div id="menu-nav"style="width: 100%;">
+      <div id="navigation-bar" style="width: 100%;">
+        <ul>
+         <li style="margin:0px; padding:0px; width:200px;"><a href="#" style="margin:0px;padding-top: 20px;
+          "><span><img src="DAR.png"></span></a></li>
+          <li><a href="#"><span>FORSIDE</span></a></li>
+          <li><a href="#"><span>OM REGIMENTET</span></a></li>
+          <li><a href="#"></i><span>VÆRNEPLIGT</span></a></li>
+          <li><a href="#"></i><span>LEDIGE STILLINGER</span></a></li>
+          <li><a href="#"></i><span>KONTAKT OS</span></a></li>
+          <li style="float:right;"><a href="#" onclick="hideandshow('#search-bar')"><i class="fa fa-search"></i><span></span></a></li>
         </ul>
-      </div> <div class="navsog"><img src="search.png"></div></a> </div>
+      </div></div>
+    
+      
+      <div id="search-bar">
+        <form>
+          <input type="text" placeholder="Enter your query and hit Enter" />
+        </form>
+      </div>
+    </div></div>
     <div class="grid-xs-4"> <a>2</a> </div>
     <div class="grid-xs-4"> <a>3</a> </div>
 	<div class="grid-xs-4"> <a>4</a> </div>
     <div class="grid-xs-4"> <a>5</a> </div>
     <div class="grid-xs-4"> <a>6</a> </div>
   </div>
-  
+  <script>let c=!1;
+
+    function hideandshow(el) {
+      var elem = $(el);
+      c ? elem.slideUp(300) : elem.slideDown(300);
+      c=!c;
+    }</script>
 <style>
-/*BURGERMENU*/
-
-@media only screen and (min-width: 65.625em) {
-  #menuToggle {
-    display: none;
-  }
+  /*Header*/
+body {
+  background: #FFF;
+  font: normal 300 18px "Roboto", sans-serif;
 }
-/*burger*/
 
-#menu a {
+#navigation-bar img {
+  width: 75px;
+  height: auto;;
+}
+
+#menu-nav {
+  max-width: 100%;
+  background-color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+
+}
+#navigation-bar li {
+  float: left;
+  width: auto;
+  height: 100%;
+
+ border-right: 2px solid rgba(136, 136, 136, 0.226);
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
   color: #000;
+  font-size: 1.5vw;
   text-decoration: none;
-}
-
-#menuToggle
-{
+  text-align: center;
   display: block;
-  position: absolute;
-  top: 35px;
-  left: 10px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: 500px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
   position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: all 0.3s ease;
+  height: auto;
+width: 100%;
+height: 142px;
+padding-right: 20px;
+padding-top: 50px;
+ padding-left: 20px;
 }
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+#navigation-bar a:hover {
+  color: #e74c3c;
 }
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #e74c3c;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar span {
+  display: block;
+}
+#search-bar {
+  display: none;
+  border-bottom: 3px solid #e74c3c;
+  border-radius: 4px;
+}
+form {
+  width: 90%;
+  margin: 10px auto;
+}
+input {
+  width: 100%;
+  padding: 10px 5%;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #e74c3c;
+  font: normal 300 18px "Roboto", sans-serif;
+  color: #888;
+  transition: box-shadow 0.5s ease;
+}
+input:focus, input:active {
+  box-shadow: 0 0 10px #e74c3c;
 }
 
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
 </style>
 
   <!-- Bare lidt hurtig mellemrum. Brug ikke <br> til rigtige projekter -->
