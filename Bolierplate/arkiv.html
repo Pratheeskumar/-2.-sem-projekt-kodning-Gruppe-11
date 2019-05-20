@@ -109,9 +109,247 @@ margin-right: auto;
       <div class="grey">
       <ul>
         <li><a href="#"><span>OM REGIMENTET</span></a></li>
-      <li><u style="color: #C8102E;"><a href="index.html"></i><span style="color:#000;">SKOLELUNDEN</span></a></u></li>
-      <li><a href="arkiv.html"></i><span>PROFIL ARKIV</span></a></li> </ul></div></div>
-    <div class="grid-xs-4" style="width: 100%; background-color:#E5E5E5; height: 80vh; background-image: url(milli.webp); background-size: cover;"> <div class="text" style="width: 80%;padding-top: 20vh; padding-left: 10vh; font-family: Verdana; font-weight: bolder; color:#FFF;"><h1 style="font-size: 5vw;background-color: black; width: auto;">DANSKE ARTILLERIREGIMENT</h1></div></div>
+      <li><a href="index.html"></i><span style="color:#000;">SKOLELUNDEN</span></a></li>
+      <li><u style="color: #C8102E;"><a href="#"></i><span>PROFIL ARKIV</span></a></u></li> </ul></div></div>
+    <div class="grid-xs-4" style="width: 100%; background-color:#E5E5E5; height: auto; ">
+      <form role="search" class="search-form" id="search-form" action="#" method="post">
+        <section class="search-filters" id="search-filters">
+
+        <section class="search-terms" style="background-color: #F2EDD9;">
+          <label for="search-term" class="search-term-label screen-reader-text" style="font-size: 20px; font-weight: bold; color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;">Find profil</label>
+          <input type="text" style=" border-radius: 50px 50px 50px 50px" placeholder="Søg...">
+
+     
+      
+          
+          <h3 class="search-filters-title" id="search-filters-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Søgemuligheder</h3>
+        </section>
+          <div class="size-filters filter-group" style="padding: 10px; padding-top: 30px; background-color:#3F5B58; height: 58vh;">
+          <div class="box" style="width:90%; height:auto; margin-left:auto; margin-right: auto; background-color: #D3DBD4; padding-top: 20px; padding-bottom: 1px;">
+              <label class="container">Navn
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">Fødselsdato
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">Rang
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">Trænummer
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Regiment
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+          </div>
+          
+          <style>/* Customize the label (the container) */
+              .container {
+                display: block;
+                position: relative;
+                padding-left: 50px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                font-size: 26px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                color: #000;
+              }
+              
+              /* Hide the browser's default checkbox */
+              .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+              }
+              
+              /* Create a custom checkbox */
+              .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 40px;
+                width: 40px;
+                background-color: #eee;
+              }
+              
+              /* On mouse-over, add a grey background color */
+              .container:hover input ~ .checkmark {
+                background-color: #ccc;
+              }
+              
+              /* When the checkbox is checked, add a blue background */
+              .container input:checked ~ .checkmark {
+                background-color: #3F5b58;
+              }
+              
+              /* Create the checkmark/indicator (hidden when not checked) */
+              .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+              
+              /* Show the checkmark when checked */
+              .container input:checked ~ .checkmark:after {
+                display: block;
+              }
+              
+              /* Style the checkmark/indicator */
+              .container .checkmark:after {
+                left: 13px;
+                top: 5px;
+                width: 15px;
+                height: 25px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+              }</style>
+          
+          
+        </section>
+      </form>
+      
+      <section class="search-results">
+        <div class="result" style="margin-top: 10px;"></div>
+        <div class="result"style="margin-top: 10px;"></div>
+        <div class="result"></div>
+        <div class="result"></div>
+        <div class="result"></div>
+        <div class="result" ></div>
+                <div class="result"></div>
+        <div class="result"></div>
+        <div class="result"></div>
+        <div class="result"></div>
+
+      </section>
+    </div>
+
+    <style>* {
+      box-sizing: border-box; 
+    
+    }
+  
+    
+    .search-form {
+      width: 35%;
+      float: left;
+      padding-right: 20px;
+    }
+    .search-term {
+      width: 100%;
+      margin: 0 0 5px 0;
+    }
+    .search-terms {
+    width: 100%;
+      padding: 10px;
+    }
+    .search-filters {
+      overflow: hidden;
+      margin: 0 0 10px 0;
+      background: #eee;
+    }
+    .search-filters-title {
+      font-weight: normal;
+      font-size: 1em;
+      margin: 0 0 10px 0;
+    }
+    .filter-group {
+      margin: 0 0 10px 0;
+    }
+    .cloned-filters {
+      display: none; 
+    }
+    .search-results {
+      width: 65%;
+      float: right;
+    }
+    .result {
+      float: left;
+      width: 48%;
+      height: 100px;
+      margin-right: 1%;
+      margin-bottom: 1.33%;
+      background: #eee;
+    }
+
+    .result img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    
+    @media (max-width: 600px) {
+      .search-form,
+      .search-results {
+        width: 100%;
+      }
+      .search-form {
+        padding: 0;
+      }
+      .search-terms {
+        display: table;
+        width: 100%;
+        margin: 0;
+      }
+      .search-terms > div {
+        display: table-row; 
+      }
+      .search-terms > div > span {
+        display: table-cell;
+      }
+      .search-term-wrap {
+        padding-right: 10px;
+      }
+      .search-button {
+        width: 100%;
+      }
+      .search-filters-title {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: 0;
+      }
+      .search-filters.pinned {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .filter-group {
+        display: none;
+      }
+      .filter-explanation {
+        display: none;  
+      }
+      
+      .filters-open .filter-group,
+      .filters-open .filter-explanation {
+        display: block; 
+      }
+      .filters-open .search-filters-title {
+        margin: 0 0 10px 0;
+      }
+    }</style>
+
+    
     <div class="grid-xs-4" style="width: 100%; background-color: #888; height: 8vh;"> </div>
     <div class="grid-xs-4" style="width: 100%; background-image: url(map.png); background-position: center; background-size: cover; background-repeat:no-repeat;  height: 100vh;"> </div>
 
@@ -203,13 +441,6 @@ margin-right: auto;
 
 
   </style>
-  <script>let c=!1;
-
-    function hideandshow(el) {
-      var elem = $(el);
-      c ? elem.slideUp(300) : elem.slideDown(300);
-      c=!c;
-    }</script>
 <style>
 /*grey header*/
 .grey li {
@@ -309,8 +540,9 @@ form {
   width: 90%;
   margin: 10px auto;
 }
-input {
-  width: 100%;
+
+.search-term input {
+  width: auto;
   padding: 10px 5%;
   text-align: center;
   outline: none;
