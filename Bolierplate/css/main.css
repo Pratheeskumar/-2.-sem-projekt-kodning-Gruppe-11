@@ -72,7 +72,7 @@ main {
 	padding-left: 50px;
 	margin-bottom: 30px;
 	cursor: pointer;
-	font-size: 2vw;
+	font-size: 1em;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -121,9 +121,9 @@ main {
   /* indikatorer */
   .container .checkmark:after {
 	left: 11px;
-	top: 2px;
-	width: 15px;
-	height: 25px;
+	top: 3px;
+	width: 12px;
+	height: 23px;
 	border: solid white;
 	border-width: 0 3px 3px 0;
 	-webkit-transform: rotate(45deg);
@@ -173,7 +173,7 @@ main {
   .result {
 	float: left;
 	width: 48%;
-	height: 100px;
+	height: 142px;
 	margin-right: 1%;
 	margin-bottom: 1.33%;
 	background: #eee;
@@ -276,9 +276,6 @@ main {
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 	  }
 	  
-	  
-		</style>
-	  <style>
 	  /*grey header*/
 	  .grey li {
 		float:left;
@@ -293,7 +290,7 @@ main {
 	  .grey a {
 		padding: 10px;
 	  font-size: 1vw;
-	  font-style: }
+	  }
 	  
 	  .grey a:hover {
 		color:#e74c3c;
@@ -302,7 +299,7 @@ main {
 		/*Header*/
 	  body {
 		background: #FFF;
-		font: normal 300 18px "Roboto", sans-serif;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
 	  }
 	  
 	  #navigation-bar img {
@@ -385,7 +382,6 @@ main {
 		box-sizing: border-box;
 		border-radius: 4px;
 		border: 1px solid #e74c3c;
-		font: normal 300 18px "Roboto", sans-serif;
 		color: #888;
 		transition: box-shadow 0.5s ease;
 	  }
