@@ -2,7 +2,7 @@
 @import url("structure.css");
 
 body {
-	background: #E5E5E5; 
+	background: rgba(0, 0, 0, 0.1); 
 	height: auto;
 } 
 
@@ -140,7 +140,6 @@ main {
   .search-form {
 	width: 35%;
 	float: left;
-	padding-right: 20px;
   }
   .search-term {
 	width: 100%;
@@ -153,7 +152,7 @@ main {
   .search-filters {
 	overflow: hidden;
 	margin: 0 0 0 0;
-	background: #eee;
+	background:rgba(0, 0, 0, 0.1);
   }
   .search-filters-title {
 	font-weight: normal;
@@ -169,6 +168,9 @@ main {
   .search-results {
 	width: 65%;
 	float: right;
+	background-color:;
+	padding-left: 20px;
+
   }
   .result {
 	float: left;
@@ -176,7 +178,6 @@ main {
 	height: 142px;
 	margin-right: 1%;
 	margin-bottom: 1.33%;
-	background: #eee;
   }
 
   .result img {
