@@ -9,7 +9,7 @@
         }
     }
 
-    document.getElementsByClassName("st20").addEventListener("click", myFunction);
+    document.getElementsId("tree").addEventListener("click", myFunction);
     function myFunction() {
         var x = document.getElementById("sideBar");
         if (x.style.display === "none") {
