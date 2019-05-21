@@ -79,6 +79,7 @@ main {
 	user-select: none;
 	color: #000;
 	min-width: 205px;
+	padding-top: 5px;
   }
   
   .container input {
@@ -168,14 +169,13 @@ main {
   .search-results {
 	width: 65%;
 	float: right;
-	background-color:;
 	padding-left: 20px;
 
   }
   .result {
 	float: left;
 	width: 48%;
-	height: 142px;
+	height: 90px;
 	margin-right: 1%;
 	margin-bottom: 1.33%;
   }
@@ -391,7 +391,7 @@ main {
 	  }
 
 
-
+/* Om os */
 
 
 
