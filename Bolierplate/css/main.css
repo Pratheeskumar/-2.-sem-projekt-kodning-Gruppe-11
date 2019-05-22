@@ -22,48 +22,7 @@ main {
 
   
  
-  /*navigations*/
-.navbox {
-	width: auto;
-	height: auto;
-	padding: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	display: inline-block;
-	position: static;
-	border-right: 2px solid rgba(66, 66, 66, 0.219);
-  }
-  .navlogo {
-	width: 10%;
-	height: auto;
-	float:left;
-	text-align: center;
   
-	border-right: 2px solid rgba(66, 66, 66, 0.219);
-  }
-  
-  .navlogo img {
-  width: 10vh;
-  padding-top: 5px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  
-  .navsog {
-	width: auto;
-	height: auto;
-	float:right;
-  text-align: center;
-  }
-  
-  .navsog img {
-	width: 14vh;
-  padding: 20px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  }
 
 /* Container og label på søgemuligheder */
 .container {
@@ -305,7 +264,7 @@ main {
 	  
 	  #navigation-bar img {
 		width: auto;
-		height: 10vh;
+		height: 5vh;
 	  }
 	  
 	  #menu-nav {
@@ -333,7 +292,7 @@ main {
 	  }
 	  #navigation-bar a {
 		color: #000;
-		font-size: 1.5vw;
+		font-size: 1.2vw;
 		text-decoration: none;
 		text-align: center;
 		display: block;
@@ -341,9 +300,9 @@ main {
 		transition: all 0.3s ease;
 		height: auto;
 	  width: 100%;
-	  height: 15vh;
+	  height: 10vh;
 	  padding-right: 30px;
-	  padding-top: 6vh;
+	  padding-top: 3vh;
 	   padding-left: 30px;
 	  }
 	  #navigation-bar a:hover {
