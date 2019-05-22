@@ -46,14 +46,19 @@ main {
         <ul>
          <li style="margin:0px; padding:0px; max-width:200px; display: inline-block;"><a href="#" style="margin:0px;padding-top: 20px;
           "><span><img src="DAR.png"></span></a></li>
-          <li><a href="#"><span>FORSIDE</span></a></li>
-          <li style="background-color: #EEEEEE;"><a href="#"><span>OM REGIMENTET</span></a></li>
-          <li><a href="#"></i><span>VÆRNEPLIGT</span></a></li>
-          <li><a href="#"></i><span>LEDIGE STILLINGER</span></a></li>
-          <li><a href="#"></i><span>KONTAKT OS</span></a></li>
-          <li style="float:right;"><a href="#" style="width: auto;"><i class="fa fa-search"></i><span></span></a></li>
+          <li class="links"><a href="#"><span>FORSIDE</span></a></li>
+          <li class="links" style="background-color: #EEEEEE;"><a href="#"><span>OM REGIMENTET</span></a></li>
+          <li class="links"><a href="#"></i><span>VÆRNEPLIGT</span></a></li>
+          <li class="links"><a href="#"></i><span>LEDIGE STILLINGER</span></a></li>
+          <li class="links"><a href="#"></i><span>KONTAKT OS</span></a></li>
+          <li id="soeg"style="float:right;"><a href="#" style="width: auto;"><i class="fa fa-search"></i><span></span></a>   </li>
+          <li id="burg"style=" float:right;">     <img src="hamburg.png" style="margin-top: 20px; padding-right:15px;" ></div>
+          </li>
         </ul>
+      
       </div></div>
+
+
     
       
       <div id="search-bar">
@@ -90,9 +95,36 @@ main {
       }
             </script>
         <div id="sidebarleft">    
-            <div id="sideicon" style="width: 100%;"><img id="arrow" src="arrow-x-01.png" style="width: 100px; height: auto;"></div>        
-          <div id="sidebarlefttop"> <h3>Kort over Skolelunden</h3></div>
+            <div id="sideicon2" style="width: 100%;"><img id="arrow2" src="arrow-x-01.png" style="width: 100px; height: auto;"></div>        
+            <script>
+                document.getElementById("sideicon2").addEventListener("click", myFunction);
+          function myFunction() {
+              var x = document.getElementById("sidebarleft");
+              if (x.style.display === "none") {
+                  x.style.display = "block";
+              } else {
+                  x.style.display = "none";
+              }
+          }
+                </script>
+            <div id="sidebarlefttop"> <h3>Kort over Skolelunden</h3></div>
           <div id="sidebarleftsoeg"><input type="text" style="margin-top: 10px; border-radius: 50px 50px 50px 50px" placeholder="Søg..."></div>
+          <div id="filtersearch" style="width: 100%; height:8%; display:block;"><img src="filter-01.png" style="padding-left: 5px;float:left;"><img src="sorter-01.png" style="padding-right:5px;float:right;"></div>
+          <div id="sidebarleftsogefelt" style="padding: 3%; display: block; background-color: #3F5B58; height:60%; width: 100%;">
+              <div class="result" style="width:100%; background-color: #D3DBD4">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
+                <h2 style="font-size:1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em;">Rang: Oversergeant</p>
+              </div></div>
+              <div class="result"style="width:100%; background-color: #D3DBD4">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
+                <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em;">Rang: Oversergeant</p>
+              </div></div>
+              <div class="result"style="width:100%; background-color: #D3DBD4">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
+                <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em;">Rang: Oversergeant</p>
+              </div></div>
+              <div class="result" style="width:100%; background-color: #D3DBD4">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
+                <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em;">Rang: Oversergeant</p>
+              </div></div>
+              Vis flere
+          </div>
         </div>
         <div id="sideBar">
             <div id="kryds" style="width: 100px; height: 100px;float:right; padding-top: 10px; padding-right: 20px;"> <img src="cancel.png" id="krydset" style="width: 20px; height: 20px; float:right;"></div>

@@ -396,8 +396,18 @@ main {
 
 
 /* Smaller than desktop */
-@media (max-width: 980px) {
+@media (max-width: 1150px) {
+	#navigation-bar #soeg{
+		display: none;
+	}
+	.links {
+		display: none;
 	
+	}
+
+	#burg {
+		display: block;
+	}
 }
 
 /* Smaller than tablet */
@@ -422,7 +432,10 @@ main {
 }
 
 /* Larger than desktop */
-@media (min-width: 980px) {
+@media (min-width: 1150px) {
+	#burg {
+		display:none;
+	}
 	
 }
 
