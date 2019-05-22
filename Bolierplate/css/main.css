@@ -60,7 +60,8 @@ main {
   
   .container:hover input ~ .checkmark {
 	background-color: #ccc;
-  }
+	}
+	
   
   .container input:checked ~ .checkmark {
 	background-color: #3F5b58;
@@ -347,7 +348,10 @@ main {
 	  form {
 		width: 90%;
 	  }
-	  
+		
+		
+		.sidebarlefttop{display:inline-block;
+		}
 	  .search-term input {
 		width: auto;
 		padding: 10px 5%;
