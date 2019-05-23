@@ -114,11 +114,101 @@
     
       
       <section class="search-results">
+
+          <button id="myBtn" class="result"><img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;"><img src="trae.png" style=" width:auto;height:60px; float:right;">
+            <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p></button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+          
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              
+            </div>
+          
+          </div>
+          <style>
+           
+              .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              }
+              
+              /* Modal Content */
+              .modal-content {
+                height: 80%;
+    width: 35%;
+    background: #D3DBD4;
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    background-image: url(css/profila.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+              }
+              
+              /* The Close Button */
+              .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+              }
+              
+              .close:hover,
+              .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+              }
+              </style>
+              <script>
+                  // Get the modal
+                  var modal = document.getElementById("myModal");
+                  
+                  // Get the button that opens the modal
+                  var btn = document.getElementById("myBtn");
+                  
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName("close")[0];
+                  
+                  // When the user clicks the button, open the modal 
+                  btn.onclick = function() {
+                    modal.style.display = "block";
+                  }
+                  
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+                  
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                  </script>
         <div class="result" style="margin-top: 10px;">
         <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;"> <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div>
-        </div>
+        </div> <div class="result" style="margin-top: 10px;">
+            <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;"> <img src="trae.png" style=" width:auto;height:60px; float:right;">
+              <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
+            </div>
+            </div>
         <div class="result"style="margin-top: 10px;">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
