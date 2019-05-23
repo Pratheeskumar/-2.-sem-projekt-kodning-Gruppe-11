@@ -194,7 +194,10 @@ height:auto; }
 	height: 90px;
 	margin-right: 1%;
 	margin-bottom: 1.33%;
-  }
+	
+	}
+	
+	#myBtn{cursor: pointer;}
 
 
 	.result1 {
