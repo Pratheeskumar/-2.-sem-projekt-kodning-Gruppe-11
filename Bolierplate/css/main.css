@@ -187,6 +187,8 @@ height:auto; }
 
   }
   .result {
+		background-color:#E5E5E5;
+		text-align:left;
 	float: left;
 	width: 48%;
 	height: 90px;
