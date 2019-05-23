@@ -21,7 +21,7 @@ main {
   }
 
   
- /* styliong burger menu*/
+ /* styling burger menu*/
  /* Style af links i burger menu*/
 .topnav a {
   float: left;
@@ -32,18 +32,34 @@ main {
   text-decoration: none;
   font-size: 17px;
 }
+#burger{float: right; width: auto;
+height:auto; }
+
+#burg {
+	display: none;
+}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
-
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
-    display: block;
+    display: none;
   }
 }
 
@@ -57,7 +73,7 @@ main {
   }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display:none;
     text-align: left;
   }
 }
@@ -292,7 +308,7 @@ main {
 	  /*grey header*/
 	  .grey li {
 		float:left;
-		display: inline;
+		
 		padding-top: 2.6vh;
 		margin-left: 1.5vw;
 	  }
