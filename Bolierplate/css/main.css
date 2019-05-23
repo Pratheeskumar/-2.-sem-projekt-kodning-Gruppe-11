@@ -426,17 +426,122 @@ height:auto; }
 
 
 
+/*Burger*/
+
+#navi {
+	display: none;
+}
+
+#navi ul {
+    list-style-type: none;
+    margin:0 0 0 40px;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+#menu {
+    display: block;
+    width: 30px;
+    height: 27px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menu + label span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 999;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menu:checked ~ label span:nth-child(1) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-13px, -1px);
+}
+
+#menu:checked ~ label span:nth-child(2) {opacity: 0;}
+#menu:checked ~ label span:nth-child(3) {
+    transform: rotate(45deg) translate(-13px, -1px);
+}
+#menu:checked ~ ul {
+    display: block;
+    background-color: #121826;
+    position: relative;
+    z-index: 30;
+		transition: background-color .3s ease;
+		width: 100%;
+		float:right;
+}
+
+/* slider*/
+.slider {
+  position: inline-block;
+}
+
+.slider-image {
+      padding: 30px;
+    width: initial!important;
+  display: block!important;
+}
+
+.slider img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-next {
+  right: 2rem;
+}
+
+.slick-prev {
+  left: 2rem;
+}
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{
+  opacity: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size:50px;
+}
+
+
 /* Smaller than desktop */
-@media (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
 	#navigation-bar #soeg{
 		display: none;
 	}
 	.links {
 		display: none;
-	
 	}
-
-	#burg {
+	#navi {
 		display: block;
 	}
 }
@@ -464,10 +569,4 @@ height:auto; }
 
 /* Larger than desktop */
 @media (min-width: 1150px) {
-	#burg {
-		display:none;
-	}
-	
 }
-
-

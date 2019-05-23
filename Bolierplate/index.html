@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/kort.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,21 +51,34 @@ main {
           <li class="links"><a href="#"></i><span>VÆRNEPLIGT</span></a></li>
           <li class="links"><a href="#"></i><span>LEDIGE STILLINGER</span></a></li>
           <li class="links"><a href="#"></i><span>KONTAKT OS</span></a></li>
-          <li id="soeg"style="float:right;"><a href="#" style="width: auto;"><i class="fa fa-search"></i><span></span></a>   </li>
-          <li id="burg"style=" float:right;">     <img src="hamburg.png" style="margin-top: 20px; padding-right:15px;" ></div>
-          </li>
+          <li id="soeg"style="float:right;"><a href="#" style="width: auto;"><i class="fa fa-search"></i>
+          </a>   </li>
         </ul>
-      
+        <div id="navi">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#" class="active">Profil</a></li>
+                <li><a href="#">Ydelser</a></li>
+                <li><a href="#">Arbejdsgang</a></li>
+                <li><a href="#">Referencer</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+
+        <script>
+        let menu = document.getElementById("menu");
+    menu.onchange = function () {
+        document.body.classList.toggle("overflow");
+    };</script>
+        
       </div></div>
 
 
-    
-      
-      <div id="search-bar">
-        <form>
-          <input type="text" placeholder="Enter your query and hit Enter" />
-        </form>
-      </div>
     </div></div>
     <div class="grid-xs-4" style="width: 100%; background-color: #EEEEEE; height: 7vh; display: inline-block;"> 
       <div class="grey">
@@ -3808,6 +3821,26 @@ document.getElementById("tre2").addEventListener("click", myFunction);
    <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5; "><a href="#"><img src="stilling-01.jpg" style="height: 100%; width: 100%;"></div></a>
   <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5;"><a href="#"><img src="indblik-01.jpg" style="height: 100%; width: 100%;"></div></a>
   </div></div>
+  <div class="grid-xs-4" style="width: 100%; background-color:#E5E5E5; height: auto; padding-bottom: 5vh; padding-top: 5vh; ">
+  <div class="containerfooter" style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
+      <div class="slider">
+  <div class="slider-image"><img src="http://placekitten.com/g/300/300" alt=""></div>
+  <div class="slider-image"><img src="http://placekitten.com/300/300" alt=""></div>
+  <div class="slider-image"><img src="http://placekitten.com/g/300/300" alt=""></div>
+  <div class="slider-image"><img src="http://placekitten.com/300/300" alt=""></div>
+  <div class="slider-image"><img src="http://placekitten.com/g/300/300" alt=""></div>
+  <div class="slider-image"><img src="http://placekitten.com/300/300" alt=""></div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script>
+  $('.slider').slick({  
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});</script>
+</div></div>
     <div class="grid-xs-4" style="width: 100%; background-color: #E5E5E5; height: auto;"> 
      
      
