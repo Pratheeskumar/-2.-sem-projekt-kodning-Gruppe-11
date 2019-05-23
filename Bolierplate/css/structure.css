@@ -1,4 +1,16 @@
 
+main {
+  display: inline-block;
+  width: 100%;  
+}
+.row div {
+  margin-bottom: 10px;
+}
+.row div a {
+  display: inline-block;
+  width: 100%;
+}
+
 /* Fonts 
 ---------------------------------------- */
 
