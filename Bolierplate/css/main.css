@@ -467,7 +467,7 @@ height:auto; }
     transition: all .3s ease;
 }
 
-label {
+#navi label {
     cursor: pointer;
     display: block;
     position: absolute;
