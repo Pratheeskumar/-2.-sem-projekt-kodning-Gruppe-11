@@ -79,7 +79,7 @@ height:auto; }
 }
 
 /* Container og label på søgemuligheder */
-.container {
+.container1 {
 	display: block;
 	position: relative;
 	padding-left: 50px;
@@ -95,7 +95,7 @@ height:auto; }
 	padding-top: 5px;
   }
   
-  .container input {
+  .container1 input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
@@ -112,12 +112,12 @@ height:auto; }
 	background-color: #eee;
   }
   
-  .container:hover input ~ .checkmark {
+  .container1:hover input ~ .checkmark {
 	background-color: #ccc;
 	}
 	
   
-  .container input:checked ~ .checkmark {
+  .container1 input:checked ~ .checkmark {
 	background-color: #3F5b58;
   }
   
@@ -129,12 +129,12 @@ height:auto; }
   }
   
   /* fremvisning af checkmark */
-  .container input:checked ~ .checkmark:after {
+  .container1 input:checked ~ .checkmark:after {
 	display: block;
   }
   
   /* indikatorer */
-  .container .checkmark:after {
+  .container1 .checkmark:after {
 	left: 11px;
 	top: 3px;
 	width: 12px;
