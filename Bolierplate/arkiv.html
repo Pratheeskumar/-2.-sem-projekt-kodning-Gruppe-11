@@ -22,22 +22,26 @@
 <main>
 
   <!-- Divs med x / 12 kolonner i bredde -->
+  <div class="topnav" id="myTopnav">
   <div class="row">
-      <div class="grid-xs-4" style="width: 100%; margin-bottom: 0;"> <div id="menu-nav" style="width: 100%;">
-        <div id="navigation-bar" style="width: 100%; max-height: 15vh;   margin: 0;
-        ">
-          <ul>
-           <li style="margin:0px; padding:0px; max-width:200px; display: inline-block;"><a href="#" style="margin:0px;padding-top: 20px;
-            "><span><img src="DAR.png" alt="logo af DAR"></span></a></li>
-            <li class="links"><a href="#"><span>FORSIDE</span></a></li>
-            <li class="links" style="background-color: #EEEEEE;"><a href="#"><span>OM REGIMENTET</span></a></li>
-            <li class="links"><a href="#"><span>VÆRNEPLIGT</span></a></li>
-            <li class="links"><a href="#"><span>LEDIGE STILLINGER</span></a></li>
-            <li class="links"><a href="#"><span>KONTAKT OS</span></a></li>
-            <li id="soeg" style="float:right;"><a href="#" style="width: auto;"><i class="fa fa-search"></i>
-            </a>   </li>
-          </ul>
-          <div id="navi">
+    <div class="grid-xs-4" style="width: 100%; margin-bottom: 0;"> <div id="menu-nav"style="width: 100%;">
+      <div id="navigation-bar" style="width: 100%; max-height: 15vh;   margin: 0;
+      ">
+         <ul>
+            <li style="margin:0px; padding:0px; max-width:200px; display: inline-block;"><a href="#" style="margin:0px;padding-top: 20px;
+             "><span><img src="DAR.png"></span></a></li>
+             <li class="links"><a href="#"><span>FORSIDE</span></a></li>
+             <li class="links" style="background-color: #EEEEEE;"><a href="#"><span>OM REGIMENTET</span></a></li>
+             <li class="links"><a href="#værnepligt"></i><span>VÆRNEPLIGT</span></a></li>
+             <li class="links"><a href="#ledige stillinger"></i><span>LEDIGE STILLINGER</span></a></li>
+             <li class="links"><a href="#kontakt os"></i><span>KONTAKT OS</span></a></li>
+             <li id="soeg"style="float:right;"><a href="#" style="width: auto; height: auto;"><i class="fa fa-search"></i><span></span></a>   </li>
+            <li id="burg" style="float:right;"><a href="javascript:void(0);" class="icon" id="burger" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a></li>
+             </li>
+           </ul>
+           <div id="navi">
               <input type="checkbox" id="menu"/>
               <label for="menu">
                   <span></span>
@@ -52,23 +56,16 @@
                   <li><a href="#">KONTAKT OS</a></li>
               </ul>
             </div>
-  
-          <script>
-          let menu = document.getElementById("menu");
-      menu.onchange = function () {
-          document.body.classList.toggle("overflow");
-      };</script>
-          
-        </div></div>
-  
-  
-      </div></div>
+      </div></div></div>
+    
+
+    </div></div>
     <div class="grid-xs-4" style="width: 100%; background-color: #EEEEEE; height: 7vh; display: inline-block;"> 
       <div class="grey">
       <ul>
         <li><a href="om.html"><span>OM SKOLELUNDEN</span></a></li>
-      <li><a href="index.html">><span style="color:#000;">SKOLELUNDEN</span></a></li>
-      <li><u style="color: #C8102E;"><a href="arkiv.html"><span style="color:#000;">PROFIL ARKIV</span></a></u></li> </ul></div></div>
+      <li><a href="index.html"></i><span style="color:#000;">SKOLELUNDEN</span></a></li>
+      <li><u style="color: #C8102E;"><a href="arkiv.html"></i><span style="color:#000;">PROFIL ARKIV</span></a></u></li> </ul></div></div>
     <div class="grid-xs-4" style="width: 100%; background-color:#E5E5E5; height: auto; padding-left:0px; ">
 
       <form role="search" class="search-form" id="search-form" action="#" method="post">
@@ -87,35 +84,35 @@
         
         </section>
           <div class="size-filters filter-group" style="padding: 10px; padding-top: 30px; background-color:#3F5B58; height: auto;padding-bottom: 22px;">
-          <div class="box" style="width:100%; height:100%; margin-left:auto; margin-right: auto; background-color: #D3DBD4; padding-top: 20px; padding-bottom: 1px;">
-              <label class="container">Navn
+          <div class="box" style="width:100%; height:100%; margin-left:auto; margin-right: auto; background-color: #D3DBD4; padding-left: 20px; padding-top: 20px; padding-bottom: 1px;">
+              <label class="container1">Navn
                   <input type="checkbox" checked="checked">
                   <span class="checkmark"></span>
                 </label>
                 
-                <label class="container">Fødselsdato
+                <label class="container1">Fødselsdato
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
                 
-                <label class="container">Rang
+                <label class="container1">Rang
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
                 
-                <label class="container">Trænummer
+                <label class="container1">Trænummer
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
-                <label class="container">Regiment
+                <label class="container1">Regiment
                     <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container">Medalje
+                  <label class="container1">Medalje
                     <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container">Hæderstegn
+                  <label class="container1">Hæderstegn
                     <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
@@ -129,7 +126,7 @@
       
       <section class="search-results">
 
-          <button id="myBtn" class="result"><img src="profil.jpg" alt="profil1" style=" width:auto;height:60px; float:left; margin-right: 20px;"><img src="trae.png" alt="trae" style=" width:auto;height:60px; float:right;">
+          <button id="myBtn" class="result"><img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;"><img src="trae.png" style=" width:auto;height:60px; float:right;">
             <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p></button>
 
           <!-- The Modal -->
@@ -142,7 +139,7 @@
             </div>
           
           </div>
-
+        
               <script>
                   // Get the modal
                   var modal = document.getElementById("myModal");
@@ -170,47 +167,96 @@
                     }
                   }
                   </script>
+
+<style>
+           
+    .modal {
+      
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      height: 80%;
+width: 35%;
+background: #D3DBD4;
+position: absolute;
+left: 40%;
+top: 15%;
+background-image: url(css/profila.png);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+border: 7px solid #3F5B58;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      margin-right:3%;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>s
         <div class="result" style="margin-top: 10px;">
-        <div> <img src="profil.jpg" alt="profil3" style=" width:auto;height:60px; float:left; margin-right: 20px;"> <img src="trae.png" alt="trae10" style=" width:auto;height:60px; float:right;">
+        <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;"> <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div>
         </div> <div class="result" style="margin-top: 10px;">
-            <div> <img src="profil.jpg" alt="profil4" style=" width:auto;height:60px; float:left; margin-right: 20px;"> <img src="trae.png" alt="trae11" style=" width:auto;height:60px; float:right;">
+            <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;"> <img src="trae.png" style=" width:auto;height:60px; float:right;">
               <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
             </div>
             </div>
-        <div class="result" style="margin-top: 10px;">     <div> <img src="profil.jpg" alt="profil5" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae11" style=" width:auto;height:60px; float:right;">
+        <div class="result"style="margin-top: 10px;">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-        <div class="result">     <div> <img src="profil.jpg" alt="profil6" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae12" style=" width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size:1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-        <div class="result">     <div> <img src="profil.jpg" alt="profil7" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae13" style=" width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-        <div class="result">     <div> <img src="profil.jpg" alt="profil8" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae14" style="width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-        <div class="result" >     <div> <img src="profil.jpg" alt="profil9" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae15" style=" width:auto;height:60px; float:right;">
+        <div class="result" >     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-                <div class="result">     <div> <img src="profil.jpg" alt="profil10" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae16" style=" width:auto;height:60px; float:right;">
+                <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
                   <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
                 </div></div>
-        <div class="result">     <div> <img src="profil.jpg" alt="profil11" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae17" style=" width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
 
-        <div class="result">     <div> <img src="profil.jpg" alt="profil12" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae18" style=" width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-        <div class="result">     <div> <img src="profil.jpg" alt="profil13" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae19" style=" width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-        <div class="result">     <div> <img src="profil.jpg" alt="profil14" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae20" style=" width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
-        <div class="result">     <div> <img src="profil.jpg" alt="profil15" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="trae21" style=" width:auto;height:60px; float:right;">
+        <div class="result">     <div> <img src="profil.jpg" style=" width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
           <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
         </div></div>
         
@@ -218,11 +264,11 @@
       </section>
     </div>
     
-    <div class="grid-xs-4" style="width: 100%; background-color: #E5E5E5; height: 8vh; text-align:center;"><img src="download.png" alt="dw" style="margin-left:auto; margin-right:auto; width:auto; height: 8vh;"></div>
+    <div class="grid-xs-4" style="width: 100%; background-color: #E5E5E5; height: 8vh; text-align:center;"><img src="download.png" style="margin-left:auto; margin-right:auto; width:auto; height: 8vh;"></div>
     <div class="grid-xs-4" style="width: 100%; height: 100vh; padding:0px; position:relative;">
       <div style="width:100%; height:100%; background-color:#E5E5E5;">
      
-        <div id="sideicon" style="position: absolute;"><img id="arrow" src="arrow-01.png" alt="pil3" style="width: 50px; height: auto;"></div>
+        <div id="sideicon" style="position: absolute;"><img id="arrow" src="arrow-01.png" style="width: 50px; height: auto;"></div>
         <script>
             document.getElementById("sideicon").addEventListener("click", myFunction);
       function myFunction() {
@@ -236,7 +282,7 @@
             </script>
         <div id="sidebarleft">
             <div id="sejsidebar">
-            <div id="sideicon2" style="width: 100%;"><img id="arrow2" alt="pil4" src="arrow-x-01.png" style="width: 50px; height: auto;"></div>        
+            <div id="sideicon2" style="width: 100%;"><img id="arrow2" src="arrow-x-01.png" style="width: 50px; height: auto;"></div>        
             <script>
                 document.getElementById("sideicon2").addEventListener("click", myFunction);
           function myFunction() {
@@ -251,20 +297,20 @@
                 
             <div id="sidebarlefttop"> <h3>Kort over Skolelunden</h3></div>
           <div id="sidebarleftsoeg"><input type="text" style="margin-top: 10px; border-radius: 50px 50px 50px 50px" placeholder="Søg..."></div>
-        <p style="margin-left:3%;">Filter</p><img src="filt.png" alt="filter"> <img src="sort.png" alt="sorter" style="float: right; margin-right:3%;"><p style="float:right; margin-right:3%;">Sorter</p>
+        <p style="margin-left:3%;">Filter</p><img src="filt.png"> <img src="sort.png" style="float: right; margin-right:3%;"><p style="float:right; margin-right:3%;">Sorter</p>
           </div>
 
           <div class="bob">
-              <div class="result1" style=" border: 2px solid gold;">     <div> <img src="profil.jpg" alt="profil40" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="træ40" style=" width:auto;height:60px; float:right;">
+              <div class="result1" style=" border: 2px solid gold;">     <div> <img src="profil.jpg" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
                 <h2 style="font-size:1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
               </div></div>
-              <div class="result1">     <div> <img src="profil.jpg" alt="profil41" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="træ39" style=" width:auto;height:60px; float:right;">
+              <div class="result1">     <div> <img src="profil.jpg" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
                 <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
               </div></div>
-              <div class="result1">     <div> <img src="profil.jpg" alt="profil42" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="træ38" style=" width:auto;height:60px; float:right;">
+              <div class="result1">     <div> <img src="profil.jpg" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
                 <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
               </div></div>
-              <div class="result1">     <div> <img src="profil.jpg" alt="profil43" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" alt="træ37" style=" width:auto;height:60px; float:right;">
+              <div class="result1">     <div> <img src="profil.jpg" style="padding-left: 5px; width:auto;height:60px; float:left; margin-right: 20px;">            <img src="trae.png" style=" width:auto;height:60px; float:right;">
                 <h2 style="font-size: 1.6vw;">SSG. K Østerlund</h2> <p style="font-size: 0.7em; line-height:0;">Rang: Oversergeant</p>
               </div></div>
             </div>
@@ -272,7 +318,7 @@
           </div>
         
         <div id="sideBar">
-            <div id="kryds" style="width: 100px; height: 100px;float:right; padding-top: 10px; padding-right: 20px;"> <img src="cancel.png" alt="krydest" id="krydset" style="width: 20px; height: 20px; float:right;"></div>
+            <div id="kryds" style="width: 100px; height: 100px;float:right; padding-top: 10px; padding-right: 20px;"> <img src="cancel.png" id="krydset" style="width: 20px; height: 20px; float:right;"></div>
           </div>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
        <style type="text/css">
@@ -3944,16 +3990,16 @@ document.getElementById("tre2").addEventListener("click", myFunction);
 
     <div class="grid-xs-4" style="width: 100%; background-color:#E5E5E5; height: auto; padding-bottom: 5vh; padding-top: 5vh; ">
   <div class="containerfooter" style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
-   <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5; "><a href="#"><img src="vaernepligt.jpg" alt="case1" style="height: 100%; width: 100%;"></a></div>
-   <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5; "><a href="#"><img src="stilling-01.jpg" alt="case2" style="height: 100%; width: 100%;"></a></div>
-  <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5;"><a href="#"><img src="indblik-01.jpg" alt="case3" style="height: 100%; width: 100%;"></a></div>
+   <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5; "><a href="#"><img src="vaernepligt.jpg" style="height: 100%; width: 100%;"></div></a>
+   <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5; "><a href="#"><img src="stilling-01.jpg" style="height: 100%; width: 100%;"></div></a>
+  <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5;"><a href="#"><img src="indblik-01.jpg" style="height: 100%; width: 100%;"></div></a>
   </div></div>
     <div class="grid-xs-4" style="width: 100%; background-color: #E5E5E5; height: auto;"> 
      
      
      
       <div class="containerfooter">
-        <div class="forsvaret"><img src="forsvaret.svg" alt="forsvaretlogo" style="width:auto; height:17vh; padding-top: 4vh;"></div>
+        <div class="forsvaret"><img src="forsvaret.svg" style="width:auto; height:17vh; padding-top: 4vh;"></div>
 <div class="leftbox">
     <span><b>Kontakt</b></span><br>
     <br>
@@ -3965,7 +4011,7 @@ document.getElementById("tre2").addEventListener("click", myFunction);
     Pressevagt: +45 2323 6500<br>
     E-mail: hkic-myn@mil.dk<br>
     <br>
-    <u><a>Kontakt</a></u></div>
+    <u><a>Kontakt</a></div></u>
 <div class="leftbox">
     <span><b>Genveje</b></span><br>
 <br><u>
@@ -3991,6 +4037,7 @@ document.getElementById("tre2").addEventListener("click", myFunction);
       </div> </div>
       <div class="grid-xs-4" style="width: 100%; background-color: #C8102E; height: 8vh;"> 
       <div class="rightbox">Cookies og persondata</div> <div class="rightbox">Tilgængelighed</div> </div>
+  </div>
 
   
   <!-- Samme som ovenfor, men hver div bliver mindre på desktop-størrelse skærm (lg) -->
